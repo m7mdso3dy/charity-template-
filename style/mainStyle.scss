@@ -1,0 +1,77 @@
+/* Scss Document */
+@import './vars';
+@import './contact-info.scss';
+@import './header';
+@import './home';
+@import './support';
+@import './mission';
+@import './donate';
+@import './causes';
+@import './say';
+@import './events';
+@import	'./counter';
+@import './chosseUs';
+@import './blog';
+@import './footer';
+@import './break-point1 1200-990';
+@import './break-point2 990-770';
+//rise your helping hand style*/
+#rise-hand{
+	text-align: center;
+	background-color: $hover-color;
+	padding: 100px;
+	color: $light-color;
+	h3{
+		font-size: 24px;
+		margin-bottom: 40px;
+		line-height: 32px;
+	}
+	.btn2{
+		a{
+			color: $hover-color;
+			
+			}
+		&:hover{
+			a{
+			color: $light-color;
+				}
+		}
+	}
+}
+
+/*end here*/
+html {
+  scroll-behavior: smooth;
+}
+a{
+	color: $light-color;
+	text-decoration: none;
+}
+body,ul{
+	margin: 0;
+	padding: 0;
+	font-family:'Poppins', sans-serif;
+	
+}
+
+body{
+	letter-spacing: 0.03rem;
+}
+	.left{
+		position: absolute;
+		color: $light-color;
+		top: 90%;
+		left: 5%;
+		z-index: 4;
+		font-size: 16px;
+	}
+	.right{
+		position: absolute;
+		color: $light-color;
+		top: 90%;
+		left: 85%;
+		z-index: 4;
+	}
+.btn[disabled]{
+	z-index: 2;
+}

@@ -1,0 +1,61 @@
+/* Scss Document */
+section.nav-top{
+	background-color: $dark-color;
+
+.contact-info{
+	font-weight: 500;
+	@include displayFlex(row,space-between,none);
+	color: $light-color;
+	padding: 16px 0px;
+	img{
+    	height: 11px;
+    	margin-top: 9px;
+    	margin-left: 10px;
+	}
+	object{
+		width: auto;
+		height: 11px;
+    	margin-top: 9px;
+    	margin-left: 10px;
+	}
+	ul{
+		width: auto;
+		display: inline-block;
+	}
+	ul:nth-of-type(2){
+		width: auto;
+		display: inline-block;
+		/*width: 25%;*/
+		float: right;
+	}
+		
+	
+	li{
+		transition: all .5s;
+		display: inline-block;
+		margin-left: 10px;
+		*{
+			display: inline-block;
+		}
+		span{
+			position: relative;
+			top:-1px;
+			left: 15px;
+		}
+		
+	}
+	ul:nth-of-type(2)>li:hover{
+		background-color: $light-color;
+		object{
+			filter: $filter-color;
+		}
+		
+	}
+	&>ul:nth-of-type(2)>li{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 1.5px solid $light-color;
+	}
+ }
+}

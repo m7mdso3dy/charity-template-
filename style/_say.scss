@@ -1,0 +1,89 @@
+/* Scss Document */
+
+#say{
+	width: 100%;
+	height: 739px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(06.jpg) no-repeat;;
+	margin-bottom: 100px;
+	background-size: cover;
+	/*@include displayFlex(row,center,center);*/
+	&>.container{
+		padding:100px 0;
+		/*overflow-x: hidden;*/
+		position: relative;
+		header{
+			@include displayFlex(column,center,space-between);
+			color: $light-color;
+			margin-bottom: 80px;
+			h2{
+				display:block;
+				font-size: 36px;
+				margin-top: 0;
+			}
+			span{
+				background-color: $light-color;
+				margin-bottom: -20px;
+				&::after{
+					background-color: $light-color;
+					}
+				}
+			}
+		.slider{
+			overflow-x: hidden;
+		
+			.people{
+				@include displayFlex(row,space-between,none);
+				width: 2280px;
+				div{
+					@include displayFlex(column,space-between,none);
+					display: block;
+					width: 540px;
+					height: 100%;
+					/*margin-right:30px;*/
+					p{	
+						line-height: 32px;
+						display: block;
+						width: 100%;
+						height: 172px;
+						background-color: $light-color;
+						border-top: 2px solid $hover-color;
+						padding: 40px;				
+						margin: 0 0 40px;
+						position: relative;
+						box-sizing: border-box;
+						&::after{
+							display: block;
+							content: '';
+							width: 20px;
+							height: 20px;
+							background-color: $light-color;
+							position: absolute;
+							transform: rotate(45deg);
+							top: 92%;
+						}
+					}
+					img{
+						width: 80px;
+						height: 80px;
+						border-radius: 50%;
+						position: relative;
+						left: 56px;
+						object-fit: cover;
+					}
+				}
+			}
+		}	
+		.srolling-btns{
+			position: absolute;
+			left: 45%;
+			bottom: 36px;
+			@media screen and (min-width: 990px){
+				button:nth-of-type(3),button:nth-of-type(4){
+					display: none;
+				}
+			} 
+		}
+		}
+	
+}
+	

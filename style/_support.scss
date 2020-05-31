@@ -1,0 +1,61 @@
+/* Scss Document */
+
+#support{
+	ul{
+		list-style: none;
+		padding-top: 100px;
+		@include displayFlex(row,space-between,none);
+		li{
+			@include displayFlex(column,center,center);
+			padding: 40px;
+			margin: 0 15px;
+			height: 300px;
+			box-sizing: border-box;
+			text-align: center;
+			color: $light-color;
+			line-height: 1.9;
+			letter-spacing: 0.03rem;
+			h3{
+				margin-top: -16px;
+			}
+			h3{
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 14px;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			button{
+				font-family: Poppins, sans-serif;
+				background-color: $light-color;
+				color:$hover-color;
+				transition: all .5s;
+				padding: 0 30px;
+				font-size: 14px;
+				width: 115px;
+				a{
+					transition: all .5s;
+					color:$hover-color;
+				}
+				&:hover{
+					a{
+						color:$light-color;
+					}
+					background-color: $dark-color;
+					color:$light-color;
+				}
+			}
+		}
+		li:nth-of-type(1){
+			background-color: $style-color1;
+		}
+		li:nth-of-type(2){
+			background-color: $style-color2;
+		}
+		li:nth-of-type(3){
+			background-color: $style-color3;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+/* Scss Document */
+
+header{
+	@include displayFlex(row,space-between,center);
+	height: 120px;
+	*{
+		display: inline-block;
+	}
+	.logo{
+		@include displayFlex(row,center,center);
+		h1{
+			font-size:24px;
+			position: relative;
+			color: #212529;
+			font-weight: 900;
+			
+		}
+		img{
+			width: 60px;
+			height: 60px;
+			margin: 0 15px 0 0;
+		}
+	}
+	nav{
+		margin-left: 156px;
+			@media screen and (max-width: 1200px) and (min-width: 990px){
+			 margin-left: 0;
+			}
+		box-sizing: border-box;
+		width: auto;
+		@include displayFlex(row,space-between,none);
+		a{
+			@include displayFlex(row,center,center);
+			text-decoration: none;
+			color: $dark-color;
+			padding: 0 12px;
+			height: 60px;
+			&:hover{
+				color: $hover-color;
+			}
+			&:active{
+				color: $hover-color;
+			}
+		}
+	}
+	button.btn1{
+		margin-right: 88px;
+	}
+	button.nav-btn{
+		display: none !important;
+		cursor: pointer;
+			@media screen and (max-width: 990px){
+				display: inline-block !important;
+			}
+		
+		width: 40px;
+		height: 40px;
+		@include displayFlex(row,center,center);
+		background-color: $light-color;
+		border: none;
+		border-radius: 50%;
+		transition: all .5s;
+		&:hover{
+			background-color: $dark-color;
+			object{
+				cursor: pointer;
+				filter:  invert(100%) sepia(1%) saturate(2648%) hue-rotate(147deg) brightness(108%) contrast(100%);
+			}
+		}
+		object{
+			cursor: pointer;
+			height: 21px;
+		}
+	}
+}

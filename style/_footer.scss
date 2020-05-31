@@ -1,0 +1,154 @@
+/* Scss Document */
+
+
+footer{
+	padding: 100px 0;
+	background-image: linear-gradient(120deg,$hover-color 0%,$hover-color 50%,$dark-color 50%);
+	&>.related{
+		@include displayFlex(row,space-between,none);
+		&>div,&>form{
+			padding: 0 15px;
+		}
+		&>div:nth-of-type(1){
+			width: 255px;
+			height: 206px;
+			line-height: 32px;
+			h5{
+				margin: 0;
+				padding: 0;
+				font-size: 24px;
+				margin-bottom: 20px;
+				color: $light-color;
+			}
+			p{
+				margin: 0;
+				padding: 0;
+				color: #DDD;
+			}
+		}
+		&>div:nth-of-type(2){
+			width: 160px;
+			height: 236px;
+			line-height: 32px;
+			h5{
+				margin: 0;
+				padding: 0;
+				font-size: 24px;
+				margin-bottom: 20px;
+				color: $light-color;
+				
+			}
+			a{
+				font-size:14px;
+				margin-bottom: 10px;
+				color: #ddd;
+				display: block;
+				padding: 0;
+				transition:all 0.5s;
+				&:hover{
+					transform: translateX(3px);
+					color: $dark-color;
+				}
+			}
+		}
+		&>div:nth-of-type(3){
+			width: 350px;
+			height: 252px;
+			color: $light-color;
+			h5{
+				margin: 0;
+				padding: 0;
+				font-size: 24px;
+				margin-bottom: 20px;
+				
+				
+			}
+			div{
+				@include displayFlex(row,none,none);
+				margin-bottom: 20px;
+				div:nth-of-type(1){
+					margin-right: 30px;
+					img{
+						height: 60px;
+						width: 70px;
+						object-fit: cover;
+					}
+				}
+				div:nth-of-type(2){
+					@include displayFlex(column,space-between,flex-start);
+					p{
+						line-height: 24px;
+						margin: 0;
+						padding: 0;
+					}
+				}
+			}
+		}
+		&>form{
+			legend{
+				margin: 0;
+				padding: 0;
+				font-size: 24px;
+				margin-bottom: 20px;
+				color:$light-color;
+			}
+			input[type='email']{
+				padding: 0 40px;
+				margin-bottom: 20px;
+				width: 255px;
+				height: 60px;
+				color: $dark-color;
+				display: block;
+				border-radius: 60px;
+				border: none;
+				font-size: 16px;
+				box-sizing: border-box;
+			}
+			
+		}
+	}
+	&>.credits{
+		margin-top: 80px;
+		.copy-rights{
+			float: left;
+		}
+		.copy-rights{
+			p{
+				color: #DDD;
+			}
+		}
+		.ownerSocial{
+			ul{
+				list-style: none;
+				width: auto;
+				display: inline-block;
+				width: 25%;
+				float: right;
+				li{
+					transition: all .5s;
+					display: inline-block;
+					margin-left: 10px;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					border: 1.5px solid $light-color;
+					object{
+						width: auto;
+						height: 11px;
+    					margin-top: 9px;
+    					margin-left: 10px;
+					}
+					&:hover{
+						background-color: $light-color;
+						object{
+							filter: $filter-color;
+						}
+		
+					}
+				}
+				
+				
+			}
+		}
+	}
+}
